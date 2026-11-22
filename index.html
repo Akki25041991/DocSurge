@@ -23,15 +23,22 @@
       <nav class="nav-links" id="navLinks">
         <a href="#services">Services</a>
         <a href="#process">How It Works</a>
+        <a href="#pricing">Packages</a>
         <a href="#principles">Ethics</a>
-        <a href="#contact" class="btn btn-sm btn-primary">Book a Free Audit</a>
+        <a href="#contact" class="btn btn-sm btn-primary">Free Audit</a>
       </nav>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Light or Dark Theme" title="Switch Theme">
+          <span id="themeIcon">☀️</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -47,7 +54,7 @@
         </p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Get Your Free Profile Audit</a>
-          <a href="#services" class="btn btn-outline">Explore Services</a>
+          <a href="#pricing" class="btn btn-outline">View Packages</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
@@ -179,61 +186,54 @@
     </div>
   </section>
 
-  <!-- Principles / Ethics Banner -->
-  <section id="principles" class="section">
+  <!-- Pricing Packages Section -->
+  <section id="pricing" class="section">
     <div class="container">
-      <div class="ethics-box">
-        <div class="ethics-text">
-          <span class="eyebrow">Our Standard</span>
-          <h2>Dignified Healthcare Marketing. Zero Clickbait.</h2>
-          <p>
-            Healthcare isn't e-commerce. We strictly follow medical communication ethics—focusing on patient awareness, preventive education, and clinical credibility rather than exaggerated claims.
-          </p>
-        </div>
-        <ul class="ethics-list">
-          <li><span>✓</span> 100% Doctor-Approved Scripts</li>
-          <li><span>✓</span> Clear, Jargon-Free Patient Education</li>
-          <li><span>✓</span> Compliant with Medical Advertising Norms</li>
-          <li><span>✓</span> Transparent Monthly Growth Reports</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section section-alt">
-    <div class="container contact-grid">
-      <div class="contact-info">
-        <span class="eyebrow">Start Growing</span>
-        <h2>Request a Free Digital Presence Audit</h2>
-        <p>
-          Share your details and we will review your current social profiles, Google listing, and local visibility—sending you a personalized action plan within 48 hours.
-        </p>
-        <div class="contact-meta">
-          <p><strong>Email:</strong> hello@docsurge.in</p>
-          <p><strong>Instagram:</strong> @docsurge.in</p>
-          <p><strong>Serving:</strong> Solo Doctors, Specialists & Clinics</p>
-        </div>
+      <div class="section-header">
+        <span class="eyebrow">Transparent Retainers</span>
+        <h2>Packages Tailored to Your Practice Stage</h2>
+        <p>Flexible monthly plans with zero hidden fees. Custom clinic retainers available on request.</p>
       </div>
 
-      <!-- Note: Replace action URL with Formspree or Web3Forms for live static form submissions -->
-      <form class="contact-form" action="https://formspree.io" method="POST">
-        <div class="form-group">
-          <label for="name">Doctor / Clinic Name</label>
-          <input type="text" id="name" name="name" placeholder="Dr. Priya Verma" required />
+      <div class="pricing-grid">
+        <!-- Tier 1 -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3>Essential Presence</h3>
+            <p>Ideal for individual doctors starting their digital footprint.</p>
+            <div class="price">₹18,000 <span>/ month</span></div>
+          </div>
+          <ul class="plan-features">
+            <li><span>✓</span> Instagram & LinkedIn Profile Optimization</li>
+            <li><span>✓</span> 8 Educational Graphics / Carousels</li>
+            <li><span>✓</span> 4 Edited Short-Form Reels (Scripts Included)</li>
+            <li><span>✓</span> Google Business Profile Setup & Basic SEO</li>
+            <li><span>✓</span> Monthly Performance Summary</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">Choose Essential</a>
         </div>
 
-        <div class="form-group">
-          <label for="specialty">Medical Specialty</label>
-          <input type="text" id="specialty" name="specialty" placeholder="Dermatology, Orthopedics, Dental..." required />
+        <!-- Tier 2 (Featured) -->
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-header">
+            <h3>Practice Growth</h3>
+            <p>Designed for specialists looking to attract consistent local patients.</p>
+            <div class="price">₹32,000 <span>/ month</span></div>
+          </div>
+          <ul class="plan-features">
+            <li><span>✓</span> Multi-Platform Management (IG, YT Shorts, LinkedIn)</li>
+            <li><span>✓</span> 12 High-Retention Reels + Full Scripting</li>
+            <li><span>✓</span> 10 Educational Carousels & Patient FAQs</li>
+            <li><span>✓</span> Local Clinic SEO & Review Management</li>
+            <li><span>✓</span> Dedicated Account Manager & Bi-Weekly Calls</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Choose Practice Growth</a>
         </div>
 
-        <div class="form-group">
-          <label for="contact-input">Email or WhatsApp Number</label>
-          <input type="text" id="contact-input" name="contact" placeholder="+91 98765 43210 or doctor@clinic.com" required />
-        </div>
-
-        <div class="form-group">
-          <label for="goal">Primary Goal</label>
-          <select id="goal" name="goal">
-            <option value="personal-brand">Build Personal Brand on Instagram / YouTube</option>
+        <!-- Tier 3 -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <h3>Clinic Authority</h3>
+            <p>Full-scale digital engine for multi-specialty clinics & senior consultants.</p>
+            <div class="price">₹55,000 <span>/ month</span></div>
